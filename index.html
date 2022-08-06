@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="homecss.css">
+</head>
+<body>
+    <div id="mainnav">
+    <nav id="secondnav">
+        <ul id="oltag" onclick="remove()">
+        <li><a id="ab" href="">Home</a></li>
+        <li><a href="">Team</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+        </ul>
+       
+    </nav>
+    <img onclick="option()" src="menu.png" alt="">
+    </div>
+<section id="homepage">
+<div id="digitalmarketing-photo">
+</div>
+<div id="learnmarketing">
+    <h1>Learn Digital marketing</h1>
+<button onclick="changecolor()">More</button>
+</div>
+
+</section>
+  <script>
+  var ullist=document.getElementById("oltag") 
+  var secton=document.getElementById('homepage') 
+  function option(){
+  ullist.style.left="0";
+  secton.style.display="none"
+  
+     
+  }
+
+  function remove(){
+      ullist.style.left="-84pc"
+      secton.style.display="block"
+      secton.style.transition="0s"
+  }
+  function changecolor(){
+      document.body.style.backgroundColor="black"
+      document.getElementById("secondnav").style.backgroundColor="black"
+  }
+
+
+  </script>
+<!-- <script src="main.js"></script> -->
+  </body>  
+  </html>

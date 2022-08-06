@@ -1,0 +1,166 @@
+
+body{
+    background-color: aliceblue;
+}
+nav{
+    background-color: white;
+    height: 3pc;
+    top: 0px;
+    left: 1px;
+    width: 86pc;
+    position: fixed;
+    display: flex;
+}
+img{
+    position: absolute;
+    left: 86pc;
+    top: 1pc;
+    display: none;
+}
+a{
+    padding: 3pc;
+    padding-top: 1pc;
+    position: relative;
+    left: 23pc;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 15px;
+}
+a:hover{
+    color: white;
+    background-color: black;
+    /* padding-bottom: 15px; */
+    /* padding: 16px; */
+    transition: 0.5s
+}
+ul{
+   display: flex;
+   list-style-type: none;
+}
+#digitalmarketing-photo{
+    position: absolute;
+    left: 49pc;
+    top: 10pc;
+    width: 32pc;
+    height: 21pc;
+    background-image: url(digital.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+#digitalmarketing-photo:fo
+section{
+    z-index: -1;
+}
+
+#learnmarketing{
+    position: absolute;
+    top: 17pc;
+    /* background-color: yellow; */
+    width: 34pc;
+    height: 11pc;
+    left: 2pc;
+    font-size: 26px;
+}
+
+#learnmarketing h1{
+    overflow:hidden;
+    animation: typing 4.1s steps(40,end);
+    white-space: nowrap;
+    letter-spacing: .15em;
+}
+
+#learnmarketing button{
+    position: absolute;
+    width: 7pc;
+    height: 2pc;
+    border-radius: 10px;
+    font-size: 20px;
+    color:blue;
+    background-color: #000000;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+#learnmarketing button::before{
+    position:absolute;
+    content: "";
+    width: 7pc;
+    border-radius: 0%;
+    height: 2pc;
+    top: -2px;
+    /* right: 100%; */
+    transform: translateX(-131%);
+    border-radius: 10px;
+    background-color: blue;
+    
+}
+#learnmarketing button:hover:before {
+    transform: translateX(-75%);
+    background-color:whitesmoke;
+    z-index: -1;
+    transition: 0.5s linear;
+   
+}
+
+@keyframes typing{
+    from{width: 0%; }
+    to{width:100%; }
+}
+
+@media (max-width:940px){
+    img{
+        display: block;
+        left: 18px;
+        position: fixed;
+    }
+    
+    nav ul li a{
+         left: 2pc;
+         align-items: center;
+         color:black;
+
+     }
+
+    nav ul{
+        display: block;
+        position: fixed;
+        top: -16px;
+        width: 100%;
+        left:-84pc;
+        height: 98%;
+        text-align: center;
+        background-color: #728c6d;
+        transition: 0.5s linear;
+        z-index:1;
+
+    }
+     nav ul li{
+        margin-left: -8pc;
+        padding: 29px;
+        position: relative;
+        top: 36px;
+        left: -1pc;
+    }
+  } 
+
+  @media (max-width:480px){
+    #learnmarketing{
+        position: absolute;
+        top: 8pc;
+        left: 2pc;
+        font-size: 25px;
+    }
+    #digitalmarketing-photo {
+        position: absolute;
+        top: 20pc;
+        left: 98px;
+        width: 24pc;
+        height: 16pc;
+    }
+    #learnmarketing button{
+        left: 12pc;
+    }
+  }
+
