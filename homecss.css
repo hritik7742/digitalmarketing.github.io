@@ -1,4 +1,3 @@
-
 body{
     background-color: aliceblue;
 }
@@ -7,7 +6,7 @@ nav{
     height: 3pc;
     top: 0px;
     left: 1px;
-    width: 86pc;
+    width: 167pc;
     position: fixed;
     display: flex;
 }
@@ -150,17 +149,21 @@ section{
         position: absolute;
         top: 8pc;
         left: 2pc;
-        font-size: 25px;
+        width: 19pc;
+        height: 7pc;
+        font-size: 14px;
     }
     #digitalmarketing-photo {
-        position: absolute;
-        top: 20pc;
-        left: 98px;
-        width: 24pc;
-        height: 16pc;
+        position: fixed;
+        top: 19pc;
+        left: 66px;
+        width: 17pc;
+        height: 12pc;
+        background-size: contain;
+    }
     }
     #learnmarketing button{
-        left: 12pc;
+        left: 92px;
     }
   }
 
